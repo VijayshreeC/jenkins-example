@@ -2,7 +2,7 @@ pipeline {
    agent any
 	
 	environment {
-    PATH = 'C:\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\\bin' ${env.PATH}"
+    PATH = 'C:\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\\bin'
    tools {
       // Install the Maven version configured as "M3" and add it to the path.
       maven "maven_3_5_0"
