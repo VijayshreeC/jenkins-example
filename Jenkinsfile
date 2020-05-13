@@ -2,7 +2,7 @@ pipeline {
    agent any
 	
 	environment {
-    PATH = 'C:\\Program Files\\Git\\usr\\bin, ${env.PATH}'
+    PATH = 'C:\\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\usr\\bin, ${env.PATH}'
 	}
    tools {
       maven "maven_3_5_0"
@@ -21,4 +21,4 @@ pipeline {
             }
         }
    }
-}		
+}	
