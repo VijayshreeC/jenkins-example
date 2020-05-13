@@ -10,13 +10,18 @@ pipeline {
 	
    stages {
    
-   
-   stage('build') {
- 
-        checkout scm
-        def v = version()
-        currentBuild.displayName = "${env.BRANCH_NAME}-${v}-${env.BUILD_NUMBER}"
-        mvn "clean verify"
-    }
-}
-}
+		stage ('Initialize') {
+		environment {
+		PATH = 'C:\\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\\usr\\bin'
+		echo "${PATH}"
+		}
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+					
+                ''' 
+            }
+        }
+   }
+}	
