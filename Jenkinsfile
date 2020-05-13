@@ -9,17 +9,6 @@ pipeline {
 	}
 	
    stages {
-		pipeline {
-   agent any
-	
-	environment {
-    PATH = 'C:\\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\\bin, ${env.PATH}'
-	}
-   tools {
-      maven "maven_3_5_0"
-	}
-	
-   stages {
    
    
    stage('build') {
