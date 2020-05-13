@@ -29,13 +29,14 @@ class FizzBuzzTest {
     @Test
     public void testBuzz() {
         String fizzBuzz = fB.play(5);
+        System.out.println("Hello World");
         Assertions.assertEquals(fizzBuzz, "Buzz");
     }
 
     @DisplayName("Don't Play FizzBuzz with number = 0")
     @Test
     public void testZero() {
-
+    System.out.println("Hello World, This is my Test");
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> fB.play(0));
     }
