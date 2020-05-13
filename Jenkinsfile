@@ -2,7 +2,7 @@ pipeline {
    agent any
 	
 	environment {
-    PATH = 'C:\\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\\bin, ${env.PATH}'
+    PATH = 'C:\\Program Files\\Git\\usr\\bin, ${env.PATH}'
 	}
    tools {
       maven "maven_3_5_0"
@@ -11,9 +11,7 @@ pipeline {
    stages {
    
 		stage ('Initialize') {
-		environment {
-		PATH = 'C:\\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\\usr\\bin, echo "${PATH}"'
-		}
+		
             steps {
                 sh '''
                     echo "PATH = ${PATH}"
@@ -23,4 +21,4 @@ pipeline {
             }
         }
    }
-}	
+}		
