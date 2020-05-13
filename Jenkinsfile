@@ -15,12 +15,8 @@ pipeline {
 		PATH = 'C:\\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\\usr\\bin, echo "${PATH}"'
 		}
             steps {
-                sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-					
-                ''' 
+                bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
         }
    }
-}		
+}	
