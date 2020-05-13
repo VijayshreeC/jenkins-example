@@ -11,7 +11,7 @@ pipeline {
    stages {
 		stage ('Initialize') {
 		environment {
-		PATH = 'C:\\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\\bin'
+		PATH = 'C:\\Users\\VijayshreeC\\AppData\\Local\\Programs\\Git\\usr\\bin'
 		}
             steps {
                 sh '''
